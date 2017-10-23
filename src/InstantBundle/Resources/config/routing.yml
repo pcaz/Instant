@@ -1,0 +1,3 @@
+instant_homepage:
+    path:     /
+    defaults: { _controller: InstantBundle:Default:index }

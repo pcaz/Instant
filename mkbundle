@@ -1,0 +1,30 @@
+#!/bin/bash
+
+if [ -z $1 ]
+then
+echo "Usage: $0 nom_du_package"
+else
+mkdir src/$1/Entity
+mkdir src/$1/EventListener
+mkdir src/$1/Form
+mkdir src/$1/Repository
+mkdir src/$1/Resources/translations
+mkdir src/$1/Service
+mkdir src/$1/Validator
+mkdir web/css
+mkdir web/images
+mkdir web/js
+mkdir web/uploads
+
+touch src/$1/Resources/config/services.yml
+touch src/$1/Resources/translations/messages.fr.yml
+touch src/$1/Resources/translations/validators.fr.yml
+
+echo '<IfModule mod_rewrite.c>' > .htaccess
+echo '   RewriteEngine On' >> .htaccess
+echo '   RewriteCond %{REQUEST_FILENAME} !-f' >>.htaccess
+echo '   RewriteRule ^(.*)$ web/$1 [QSA,L]' >> .htaccess
+echo ' </IfModule>' >> .htaccess
+
+fi
+

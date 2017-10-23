@@ -1,0 +1,27 @@
+{
+  "name": "instant",
+  "version": "1.0.0",
+  "description": "Instant sur Symfony 2.8",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitub.com/pcaz/Instant"
+  },
+  "author": "Pascal Cazabat",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": ">=0.4.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
