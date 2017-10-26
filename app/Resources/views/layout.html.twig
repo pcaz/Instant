@@ -1,28 +1,26 @@
 {% extends '::Instant.html.twig' %}
 
-{% block appcss%}
-{% block css %}{% endblock %}
-{% endblock %}
-{% block appscriptheader %}
-{% block scriptheader %}{% endblock %}
-{% endblock %}
+{%  block appheader %}
+    {% block appcss%}
+        {% block css %}{% endblock css %}
+    {% endblock appcss %}
+    {% block appscriptheader %}
+        {% block scriptheader %}{% endblock scriptheader %}
+    {% endblock appscriptheader %}
+{%  endblock appheader %}
 {% block appslideshow %}
-{% block slideshow %}{% endblock %}
-{% endblock %}
-{% block appheader  %}
-{% block header %}{% endblock %}
-{% endblock %}
+{% block slideshow %}{% endblock slideshow%}
+{% endblock appslideshow %}
 {% block appmenu %}
-{% block menu %}
-{% endblock %}
-{% endblock %}
+{% block menu %}{% endblock menu %}
+{% endblock appmenu %}
 {% block appcontent %}
-{% block content %}{% endblock %}
-{% endblock %}
+{% block content %}{% endblock content%}
+{% endblock appcontent%}
 {% block appfooter %}
-{% block footer %}{% endblock %}
-{% endblock %}
+{% block footer %}{% endblock footer %}
+{% endblock appfooter %}
 {% block appscript%}
-{% block script%}{% endblock %}
-{% endblock %}
+{% block script%}{% endblock script%}
+{% endblock appscript %}
  
