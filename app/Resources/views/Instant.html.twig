@@ -7,10 +7,13 @@
         {% endblock appheader %}
    </head>
    <body>
+   {% block appbody %}
+       {% block applogo %}{% endblock applogo %}
        {% block appslideshow %}{% endblock appslideshow %} 
        {% block appmenu %}{% endblock appmenu %}
        {% block appcontent %}{% endblock appcontent %}
        {% block appfooter %}{% endblock appfooter %}
        {% block appscript %}{% endblock appscript %}
+   {% endblock appbody  %}
     </body>
 </html>

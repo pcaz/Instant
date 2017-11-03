@@ -145,10 +145,10 @@ legend {
 
 /********** LOGO SECTION *************/
 #logo {
-  margin: 20px 0 0 0; }
+  margin: 20px 0 0 50px; }
 
 #logo img {
-  width: 912px; }
+  width: 50px; }
 
 /********** Menu **********/
 ol, ul {

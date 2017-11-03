@@ -1,0 +1,10 @@
+menu:
+    user: Utilisateur
+    exploitation: Exploitation
+    statistics: Statitistiques
+    analyse:  Analyse
+    schedule: Horaires
+    event:  Perturbations
+    content:  Contenu
+    export: Export
+  

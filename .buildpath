@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="app"/>
+	<buildpathentry kind="src" path="src/AdminBundle"/>
+	<buildpathentry kind="src" path="src/InstantBundle"/>
+	<buildpathentry kind="src" path="src/UserBundle"/>
+	<buildpathentry kind="src" path="tests/AdminBundle/Controller"/>
+	<buildpathentry kind="src" path="tests/InstantBundle/Controller"/>
+	<buildpathentry kind="src" path="tests/UserBundle/Controller"/>
+	<buildpathentry kind="src" path="vendor"/>
+	<buildpathentry kind="src" path="web"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>
