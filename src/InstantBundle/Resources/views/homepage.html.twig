@@ -1,5 +1,14 @@
 {% extends '::layout.html.twig' %} 
-
+{% block contentheader %}
+<div id="connexion">
+{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+    <a href="{{ path('fos_user_profile_show') }}">{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}</a> |
+    <a href="{{ path('fos_user_security_logout') }}">
+        {{ 'layout.logout'|trans([], 'FOSUserBundle') }}
+    </a>
+{% endif %}
+</div> <!-- connexion -->
+{% endblock contentheader %}
 {% block menu %}
 <div id="menu">
 	 			<ul>	
