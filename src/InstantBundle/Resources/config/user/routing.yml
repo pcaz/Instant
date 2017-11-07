@@ -1,0 +1,12 @@
+user_profile:
+    path: /user/profile/
+    defaults: { _controller: InstantBundle:User:profile }
+user_add:
+    path: /
+    defaults: { _controller: InstantBundle:User:add }
+user_edit:
+    path: /
+    defaults: { _controller: InstantBundle:User:edit }
+user_contact:
+    path: /
+    defaults: { _controller: InstantBundle:User:contact }

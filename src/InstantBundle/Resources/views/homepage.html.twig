@@ -1,1 +1,32 @@
 {% extends '::layout.html.twig' %} 
+
+{% block menu %}
+<div id="menu">
+	 			<ul>	
+		    			<li><a>{{ "menu.user"|trans}}</a>
+		    				<ul>
+		    					
+								<li id="user_menu"><a href="{{ path('user_profile') }}">{{ "user.profile"| trans }}</a></li>
+								<li id="user_menu"><a href="{{ path('user_add') }}">{{ "user.add" | trans }}</a></li>
+								<li id="user_menu"><a href="{{ path('user_edit') }}">{{ "user.edit" | trans }}</a></li>
+								<li id="user_menu"><a href="{{ path('user_contact') }}">{{ "user.contact" | trans}}</a></li>
+		    				</ul>
+		    			</li>	
+		    			<li id="exploitation-menu"><a href="#">{{"menu.exploitation"| trans}}</a></li>
+		    			
+		    			<li id="statistics-menu"><a href="#">{{ "menu.statistics" | trans}}</a></li>
+		    			
+		    			<li id="analyse-menu"><a href="#">{{ "menu.analyse" | trans}}</a></li>
+						
+		    			<li id="schedules-menu"><a href="#">{{ "menu.schedules" | trans}}</a></li>
+						
+		    			<li id="events-menu"><a href="#">{{ "menu.events" | trans}}</a></li>
+						
+		    			<li id="content-menu"><a href="#">{{ "menu.content" | trans}}</a></li>						
+						
+						<li id="export-menu"><a href="#">{{ "menu.export" | trans }}</a>
+		 			</ul> 			
+
+
+</div> <!-- menu -->
+{% endblock menu %}

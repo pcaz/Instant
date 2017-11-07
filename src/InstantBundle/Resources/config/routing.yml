@@ -1,3 +1,6 @@
 instant_homepage:
-    path:     /
-    defaults: { _controller: InstantBundle:Default:index }
+    path: /
+    defaults: { _controller: InstantBundle:Homepage:index }
+user:
+    resource: "user/routing.yml"
+    prefix: /user

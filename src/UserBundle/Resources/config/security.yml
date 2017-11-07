@@ -3,9 +3,12 @@ security:
     encoders:
         FOS\UserBundle\Model\UserInterface: bcrypt
 
+
     role_hierarchy:
+        ROLE_GOD: ROLE_SUPERADIM
+        ROLE_SUPERADMIN: ROLE_ADMIN
         ROLE_ADMIN:       ROLE_USER
-        ROLE_SUPER_ADMIN: ROLE_ADMIN
+    
 
     providers:
         fos_userbundle:
@@ -24,4 +27,7 @@ security:
         - { path: ^/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/god/, role: ROLE_GOD }
+        - { path: ^/superadmin/, role: ROLE_SUPERADMIN }
         - { path: ^/admin/, role: ROLE_ADMIN }
+        - { path: ^/, role: ROLE_USER }

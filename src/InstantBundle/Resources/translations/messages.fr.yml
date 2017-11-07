@@ -1,10 +1,17 @@
 menu:
-    user: Utilisateur
-    exploitation: Exploitation
-    statistics: Statitistiques
-    analyse:  Analyse
-    schedule: Horaires
-    event:  Perturbations
-    content:  Contenu
-    export: Export
+  user: Utilisateurs
+  exploitation: Exploitation
+  statistics: Statistiques
+  analyse: Analyse
+  schedules: Horaires
+  events: Perturbations
+  content:  Contenu
+  export: Export
+user:
+  profile: Votre profil
+  add:  Ajouter
+  edit: Editer
+  contact:  Contacter
+  
+  
   

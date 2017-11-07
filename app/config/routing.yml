@@ -1,9 +1,6 @@
 instant:
     resource: "@InstantBundle/Resources/config/routing.yml"
     prefix:   /
-admin:
-    resource: "@AdminBundle/Resources/config/routing.yml"
-    prefix:   /admin
 user:
     resource: "@UserBundle/Resources/config/routing.yml"
 fos_user:

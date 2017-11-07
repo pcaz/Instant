@@ -8,7 +8,9 @@
    </head>
    <body>
    {% block appbody %}
-       {% block applogo %}{% endblock applogo %}
+       {% block appcontentheader %}
+           {% block applogo %}{% endblock applogo %}
+       {% endblock appcontentheader %}
        {% block appslideshow %}{% endblock appslideshow %} 
        {% block appmenu %}{% endblock appmenu %}
        {% block appcontent %}{% endblock appcontent %}
